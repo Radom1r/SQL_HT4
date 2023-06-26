@@ -30,7 +30,7 @@ select musician_name from musician_album ma, albums a, musicians m
 where a.published_in != 2020 and ma.album_id = a.id and ma.musician_id = m.id ;
 
 select distinct m2.mixtape_name from mixtape_song ms, songs s, albums a, musician_album ma, musicians m, mixtapes m2  
-where ms.mixtape_id = m2.id and ms.song_id = s.id and s.album_id = a.id and a.id = ma.album_id and ma.musician_id = m.id and m.musician_name = 'Eminem'
+where ms.mixtape_id = m2.id and ms.song_id = s.id and s.album_id = a.id and a.id = ma.album_id and ma.musician_id = m.id and m.musician_name = 'Eminem';
 
 select a.album_name from genre_musician gm, musician_album ma, albums a
 where gm.all_musician_id = ma.musician_id and ma.album_id = a.id
