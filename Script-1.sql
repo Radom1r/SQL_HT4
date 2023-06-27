@@ -1,3 +1,4 @@
+
 create table if not exists genres(
 	id SERIAL primary key,
 	genre_name VARCHAR(100) unique not null
